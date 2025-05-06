@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passo com DOM</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+            color: white;
+            background-color: rgb(59, 117, 98);
+        }
+        h2{
+            text-decoration: underline;
+        }
+        p{
+            text-align: justify;
+            text-indent: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <h2>Oque é a Árvore DOM?</h2> 
+    <p>DOM é a representação em árvore de um documento HTML ou XML. É uma interface de programação que permite acessar e manipular o conteúdo, estrutura e estilo de um documento. A árvore DOM é composta por nós, onde cada nó representa uma parte do documento, como elementos, atributos e texto. Com o DOM, é possível criar, modificar e excluir elementos dinamicamente usando JavaScript.</p>
+    <h2>Maneiras de navegar entre os elementos:</h2>
+        <ul>
+            <li>Marca/Tag</li>
+            <p>getElementsByTagName()</p> <!-- Retorna uma coleção de elementos com a mesma tag. -->
+            <li>ID</li>
+            <p>getElementById()</p> <!-- Retorna um elemento com o ID especificado. -->
+            <li>Nome</li>
+            <p>getElementsByName()</p> <!-- Retorna uma coleção de elementos com o mesmo nome. -->
+            <li>Classe</li>
+            <p>getElementsByClassName()</p> <!-- Retorna uma coleção de elementos com a mesma classe. -->
+            <li>Seletor/CSS</li>
+            <p>querySelector() ou querySelectorAll()</p> <!-- Retorna o primeiro elemento ou todos os elementos que correspondem ao seletor CSS especificado. -->
+        </ul>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName("p")[0] // Seleciona o primeiro parágrafo
+        document.write('Está escrito assim: ' + p1.innerHTML + "<br> <br>") // Escreve o conteúdo do primeiro parágrafo na página
+
+        var p2 = document.getElementsByTagName("p")[1] // Seleciona o segundo parágrafo
+        p2.style.color = "black" // Altera a cor do segundo parágrafo para vermelho
+
+        var p3 = document.getElementsByTagName("p")[2]
+        // alert(p3.innerHTML) // Exibe o conteúdo do segundo parágrafo em um alerta
+
+        var d = document.getElementById("msg") // Seleciona o elemento com o ID "msg"
+        d.style.background = "darkgreen" // Altera a cor do elemento "msg" para vermelho
+        // d.innerText = "Estou aguarndando..."
+
+        var d = document.querySelector("div#msg") // Seleciona o elemento com o ID "msg" usando querySelector
+        d.style.color = "black" 
+
+        
+        
+        
+        
+        
+        // document.write(document.URL + "<br>")  // Escreve a URL do documento na página
+
+        // document.write(navigator.appName + "<br>") // Escreve o nome do navegador na página
+
+        // document.write(document.charset) // Escreve o charset do documento na página
+    </script>
+</body>
+</html>

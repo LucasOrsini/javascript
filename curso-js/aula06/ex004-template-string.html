@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(219, 203, 219, 0.713);
+            font: normal 20px Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>!<br>`) // document.write para escrever na tela // template string com crase
+        document.write(`Seu nome tem ${nome.length} letras<br>`) // length para contar o número de caracteres
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`) // toUpperCase para transformar em maiúsculas
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()} <br>`) // toLowerCase para transformar em minúsculas
+        var n1 = Number(prompt('Digite um número: '))
+        document.write(`Você digitou o número ${n1.toFixed(2).replace('.', ',')}`) 
+        // toFixed(2) para limitar a 2 casas decimais 
+        // replace('.', ',') para substituir o ponto por vírgula
+        n1 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // para transformar em moeda real
+        document.write(`<br>Seu número em moeda real é ${n1}`)
+    </script>
+</body>

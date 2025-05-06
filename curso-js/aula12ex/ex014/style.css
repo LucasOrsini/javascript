@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(91, 111, 186);
+    font: normal 15pt arial, sans-serif;
+}
+header{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+div#msg, div#msg2{
+    text-align: center;
+    padding: 8px;
+
+}
+
+div#foto{
+    text-align: center;
+    position: relative;
+
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+
