@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>
-            
+        <div id="dados">
+            <p>Início: <input type="number" name="ini" id="txtini"></p>
+            <p>Fim: <input type="number" name="fim" id="txtfim"></p>
+            <p>Passo: <input type="number" name="pas" id="txtpas"></p>
+            <p><input type="button" name="btn" id="btn" value="Contar" onclick="contar()"></p>
+
         </div>
         <div id="res">
-            
+            Preparando contagem...
         </div>
 
     </section>
