@@ -19,7 +19,7 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 }
 #btn{
-    background-color: rgb(72, 89, 148);
+    background-color: rgb(72, 148, 105);
     color: white;
     border-radius: 5px;
     padding: 10px;
@@ -29,7 +29,7 @@ section{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.157);
 }
 #btn:hover{
-    background-color: rgb(47, 64, 123);
+    background-color: rgb(47, 123, 76);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
 }
 
