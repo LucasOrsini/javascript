@@ -3,20 +3,18 @@ function tabuada(){
     let tab = document.getElementById('seltab')
 
     if(num.value.length == 0){
-        alert('Por favor, digite um número!')
+        window.alert('Por favor, digite um número!')
     }else{
-        let n = Number(num.value)
-        let c = 1
-        tab.innerHTML = '' // Limpa o conteúdo anterior da tabela
-
-        for(c = 1; c <= 10; c++){
-            let item = document.createElement('option')
-            item.text = `${n} x ${c} = ${n*c}`
-            item.value = `tab${c}` // Atributo value para cada opção
-            tab.appendChild(item) // Adiciona o item à tabela
+        let n = Number(num.value) // Converte o valor para número
+        tab.innerHTML = '' // Limpa o select antes de adicionar os novos options
+        for(let i=1; i <=10; i++){ 
+            let item = document.createElement('option') // Cria um novo elemento option
+            item.text = `${n} x ${i} = ${n*i}` // texto do option
+            item.value = `tab${i}` // valor do option
+            tab.appendChild(item) // Adiciona o option ao select
         }
 
 
-
     }
+
 }
