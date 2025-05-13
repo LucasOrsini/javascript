@@ -3,7 +3,7 @@ function tabuada(){
     let tab = document.getElementById('seltab')
 
     if(num.value.length == 0){
-        window.alert('Por favor, digite um número!')
+        alert('Por favor, digite um número!')
     }else{
         let n = Number(num.value) // Converte o valor para número
         tab.innerHTML = '' // Limpa o select antes de adicionar os novos options
