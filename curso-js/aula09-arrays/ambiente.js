@@ -8,6 +8,5 @@ console.log(`O primeiro valor do vetor é ${num[0]}`) // Mostra o primeiro eleme
 
 console.log(`O vetor tem ${num.length} posições`) // Mostra quantidade de elemtentos no vetor
 
-for(let pos = 0; pos < num.length; pos++) { // Laço for para percorrer o vetor
-    console.log(`A posição ${pos} tem o valor ${num[pos]}`) // Mostra a posição e o valor do vetor
-}
+console.log(`O número 7 está na posição ${num.indexOf(7)}`) // Mostra a posição do número 7 no vetor, se não encontrar retorna -1
+console.log(`O número 8 está na posição ${num.indexOf(8)}`) 
