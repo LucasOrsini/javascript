@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font: normal 16pt arial;
+        text-align: center;
+    }
+
+    .verde{
+        color: rgb(119, 201, 119);
+    }
+
+    button{
+        color: white;
+        font: bolder 16pt arial;
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .start{
+        background-color: rgb(86, 150, 86);
+    }
+
+    .stop{
+        background-color: rgb(242, 93, 67);
+    }
+
+    .start:hover{
+        background-color: rgb(101, 181, 101);
+    }
+
+    .stop:hover{
+        background-color: rgb(242, 111, 111);
+    }
+</style>
+<body>
+    <h1>Controle de Tempo</h1>
+    <!-- <h2 id="tempo">Clique no botão <strong class="verde">verde</strong> para iniciar</h2> -->
+     <h2 id="tempo">10</h2>
+    <button class="start" onclick="ativarContagem()">Ativar Contagem</button>
+    <button class="stop" onclick="pararContagem()">Parar Contagem</button>
+    <script src="index.js"></script>
+</body>
+</html>
