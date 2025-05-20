@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <style>
+        body{
+            text-align: center;
+            font: normal 16pt Arial, sans-serif;
+        }
+        #cep{
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            font: normal 16pt Arial, sans-serif;
+        }
+        #btn{
+            width: 100px;
+            height: 30px;
+            font: normal 16pt Arial, sans-serif;
+            cursor: pointer;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSON</h1>
+
+    <input type="text" placeholder="Digite o CEP" id="cep" />
+    <button id="btn" onclick="buscarCEP()">Buscar</button>
+    <p id="texto"></p>
+    <script src="index.js"></script>
+</body>
+</html>
